@@ -1,11 +1,11 @@
 import React from 'react';
-import { Mail, ArrowRight, Code, Database, Layers } from 'lucide-react';
+import { Mail, ArrowRight, Code, Database, Layers, Download } from 'lucide-react';
 import hero from '../assets/hero.jpg';
 import cv from '../assets/CV.pdf';
 
 const HeroSection = () => {
   return (
-    <section  className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
@@ -39,20 +39,25 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Call to Action Button */}
-            <div className="pt-4">
+            {/* Call to Action Buttons */}
+            <div className="pt-4 flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
               <a 
-                href="mailto:chaimaamali47@gmail.com?subject=Hello Ada&body=Hi Ada, I'd like to get in touch with you about..."
+                href="mailto:chaimaamali47@gmail.com?subject=Hello Chaima&body=Hi Chaima, I'd like to get in touch with you about..."
                 className="group bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center gap-3"
               >
                 <Mail size={20} />
                 <span>Contact Me</span>
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
               </a>
-              <a href={cv} download >
-                    <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg'>
-                        Download CV
-                    </button>
+              
+              <a 
+                href={cv} 
+                download
+                className="group bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center gap-3"
+              >
+                <Download size={20} />
+                <span>Download CV</span>
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
               </a>
             </div>
             
