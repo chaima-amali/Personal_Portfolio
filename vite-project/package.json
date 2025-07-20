@@ -1,7 +1,6 @@
 {
   "name": "vite-project",
   "private": true,
-  "homepage": "https://chaima-amali.github.io/Personal_Portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
