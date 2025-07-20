@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, ArrowRight, Code, Database, Layers } from 'lucide-react';
-
+import hero from '../assets/hero.jpg';
 const HeroSection = () => {
   return (
     <section  className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center px-4 sm:px-6 lg:px-8">
@@ -76,7 +76,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-xl animate-pulse">
                   <img 
-                    src="/hero.jpg" 
+                    src={hero} 
                     alt="chaima - Full Stack Developer" 
                     className="w-full h-full object-cover"
                   />

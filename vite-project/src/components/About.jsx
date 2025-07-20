@@ -1,6 +1,6 @@
 import React from 'react';
 import { MousePointer, Database, Layout } from 'lucide-react';
-import aboutimg from '../../public/aboutimg.jpg';
+import aboutimg from '../assets/aboutimg.jpg';
 
 const AboutSection = () => {
   const skills = [

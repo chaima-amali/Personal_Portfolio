@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, ExternalLink, X, Play } from 'lucide-react';
 
+// Import images and videos from assets folder
+import nutriDzairImage from '../assets/NutriDzair.jpeg';
+import nutriDzairVideo from '../assets/NutriDzair.mp4';
+import studyMateImage from '../assets/StudyMate.png';
+import studyMateVideo from '../assets/StudyMate.mp4';
+import smartHRImage from '../assets/SmartHR.png';
+import smartHRVideo from '../assets/SmartHR.mp4';
+
 const ProjectsComponent = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -10,8 +18,8 @@ const ProjectsComponent = () => {
       id: 1,
       title: "NutriDzair",
       description: "NutriDzair is a personalized nutrition recommendation web app designed for Algerian users. It helps individuals choose healthy, budget-friendly meals by considering dietary needs, allergies, and nutritional goals. Using intelligent search algorithms like A* and UCS,it recommends meals that balance cost, calories, taste, and user preferences.",
-      image: "/NutriDzair.jpeg",
-      videoUrl: "/NutriDzair.mp4",
+      image: nutriDzairImage,
+      videoUrl: nutriDzairVideo,
       githubUrl: "https://github.com/chaima-99/NutriDzair",
       techStack: ["React", "Flask", "AI"],
       category: "Full Stack"
@@ -19,9 +27,9 @@ const ProjectsComponent = () => {
     {
       id: 2,
       title: "StudyMate",
-      description: "StudyMate is an AI-powered learning platform that transforms self-learning from an isolating, overwhelming experience into a structured, motivating, and adaptive journey. It’s designed to support learners who want guidance tailored to their personality, learning style, and goals..",
-      image: "/StudyMate.png",
-      videoUrl: "/StudyMate.mp4",
+      description: "StudyMate is an AI-powered learning platform that transforms self-learning from an isolating, overwhelming experience into a structured, motivating, and adaptive journey. It's designed to support learners who want guidance tailored to their personality, learning style, and goals..",
+      image: studyMateImage,
+      videoUrl: studyMateVideo,
       githubUrl: "https://github.com/chaima-99/M1",
       techStack: ["React", "Express", "MongoDB","AI"],
       category: "Web App"
@@ -30,8 +38,8 @@ const ProjectsComponent = () => {
       id: 3,
       title: "SmartHR",
       description: "AI-Enhanced HR Management System Web application modernize enterprise human resource processes. The app features secure authentication, facial recognition check-in/out, task and leave management, and predictive analytics for absenteeism and delays. Developed collaboratively using Frontend, Backend, and Data Science skills.",
-      image: "/SmartHR.png",
-      videoUrl: "/SmartHR.mp4",
+      image: smartHRImage,
+      videoUrl: smartHRVideo,
       githubUrl: "https://github.com/chaima-99/SmartHR",
       techStack: ["React", "PostgreSQL","fastAPI", "AI"],
       category: "Mobile App"
@@ -109,15 +117,22 @@ const ProjectsComponent = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';
                   }}
                 />
                 
-                
-                
+                {/* Image Fallback */}
+                <div className="hidden w-full h-full bg-slate-700 items-center justify-center">
+                  <div className="text-center text-slate-400">
+                    <div className="w-16 h-16 bg-slate-600 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                      {project.title.charAt(0)}
+                    </div>
+                    <p className="text-sm">{project.title}</p>
+                  </div>
+                </div>
               </div>
 
               {/* Project Content */}

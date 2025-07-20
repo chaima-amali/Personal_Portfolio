@@ -1,18 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ensia from '../assets/ensia.png'; 
+import html from '../assets/html.png';
+import css from '../assets/css.png';
+import react from '../assets/react.png';
+import express from '../assets/express.jpg';
+import sql from '../assets/sql.jpg';
+import mongodb from '../assets/mongodb.png';
+import python from '../assets/python.jpg';
+import php from '../assets/php.jpg';
+import cpp from '../assets/c++.jpg';
+import figma from '../assets/figma.png';
 
 const ExperienceComponent = () => {
   const techStack = [
-    { name: 'HTML', icon: '/html.png' },
-    { name: 'CSS', icon: '/css.png' },
-    { name: 'React', icon: '/react.png' },
-    { name: 'Express.js', icon: '/express.jpg' },
-    { name: 'SQL', icon: '/sql.jpg' },
-    { name: 'MongoDB', icon: '/mongodb.png' },
-    { name: 'Python', icon: '/python.jpg' },
-    { name: 'PHP', icon: '/php.jpg' },
-    { name: 'C++', icon: '/c++.jpg' },
-    { name: 'Figma', icon: '/figma.png' }
+    { name: 'HTML', icon: html },
+    { name: 'CSS', icon: css },
+    { name: 'React', icon: react },
+    { name: 'Express.js', icon: express },
+    { name: 'SQL', icon: sql },
+    { name: 'MongoDB', icon: mongodb },
+    { name: 'Python', icon: python },
+    { name: 'PHP', icon: php },
+    { name: 'C++', icon: cpp },
+    { name: 'Figma', icon: figma }
   ];
 
   const experiences = [
@@ -48,7 +59,7 @@ const ExperienceComponent = () => {
     }*/
     {
       company: 'Ensia',
-      logo: '/ensia.png',
+      logo: ensia,
       position: 'AI Student',
       duration: 'Sept. 2023 - Present',
       achievements: [
@@ -56,7 +67,7 @@ const ExperienceComponent = () => {
         'Built multiple web apps using React, Vite, and Tailwind CSS as part of coursework and self-initiated projects'
       ]
     }
-    ];
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
