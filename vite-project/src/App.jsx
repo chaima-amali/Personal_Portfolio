@@ -5,6 +5,7 @@ import AboutSection from './components/About'
 import ExperienceSection from './components/Experience'
 import ProjectsSection from './components/Projects'
 import ContactComponent from './components/Contact'
+import AdminVisitorTracker from './components/AdminVisitorTracker';
 function App() {
 
   return (
@@ -15,6 +16,8 @@ function App() {
       <ExperienceSection/>
       <ProjectsSection/>
       <ContactComponent/>
+      <AdminVisitorTracker/>
+      
     </div>
       
     
