@@ -1,7 +1,6 @@
 import React from 'react';
 import { Mail, ArrowRight, Code, Database, Layers, Download } from 'lucide-react';
 import hero from '../assets/hero.jpg';
-import cv from '../assets/CV.pdf';
 
 const HeroSection = () => {
   return (
@@ -51,7 +50,7 @@ const HeroSection = () => {
               </a>
               
               <a 
-                href={cv} 
+                href="/cv.pdf" 
                 download
                 className="group bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center gap-3"
               >
