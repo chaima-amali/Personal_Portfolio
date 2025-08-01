@@ -9,7 +9,7 @@ import studyMateImage from '../assets/StudyMate.png';
 import studyMateVideo from '../assets/StudyMate.mp4';
 import smartHRImage from '../assets/SmartHR.png';
 import smartHRVideo from '../assets/SmartHR.mp4';
-
+import athleticsClubImage from '../assets/Athletics Club.png'; // Assuming you have an image for Athletics Club
 const ProjectsComponent = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -43,6 +43,16 @@ const ProjectsComponent = () => {
       githubUrl: "https://github.com/chaima-99/SmartHR",
       techStack: ["React", "PostgreSQL","fastAPI", "AI"],
       category: "Mobile App"
+    },
+    {
+      id: 3,
+      title: "Athletics Club",
+      description: "Modern, responsive, and engaging website design focused on: Showcasing club achievements & values Promoting different athletic disciplines (sprints, jumps, endurance...)Highlighting upcoming events and competition schedules Presenting athlete testimonials and coaching staff",
+      image: athleticsClubImage,
+      videoUrl: "https://www.youtube.com/watch?v=example", // Replace with actual video URL
+      githubUrl: "https://www.figma.com/design/twadFdJLfqLfULhi869DyG/ACAkbou?node-id=0-1&t=8uYxswvnY4yCtRoP-1",
+      techStack: ["Figma"],
+      category: "UI UX Design"
     }
   ];
 
