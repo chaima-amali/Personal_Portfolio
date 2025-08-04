@@ -11,8 +11,8 @@ import studyMateVideo from '../assets/StudyMate.mp4';
 import smartHRImage from '../assets/SmartHR.png';
 import smartHRVideo from '../assets/SmartHR.mp4';
 import athleticsClubImage from '../assets/Athletics Club.png';
-import owl from '../assets/owl.png';
-import OWL from '../assets/owl.mp4';
+import owlimg from '../assets/OWL.jpg';
+import OWL from '../assets/OWL .mp4';
 const ProjectsComponent = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -61,7 +61,7 @@ const ProjectsComponent = () => {
       id: 3,
       title: "OWL AI",
       description: "Owl AI is an innovative EdTech platform that redefines how students, learners, and freshers gain real-world experience in technology. We bridge the gap between academic learning and industry requirements by offering comprehensive virtual internships combined with curated learning content, expert mentorship, and industry-recognized certifications.",
-      image: owl,
+      image: owlimg,
       videoUrl: OWL, 
       githubUrl: "https://github.com/chaima-99/Internship_Platform",
       techStack: ["React",  "emailjs", "tailwidcss"],
