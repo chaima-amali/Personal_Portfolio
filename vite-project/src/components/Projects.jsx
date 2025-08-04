@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, ExternalLink, X, Play } from 'lucide-react';
@@ -9,7 +10,9 @@ import studyMateImage from '../assets/StudyMate.png';
 import studyMateVideo from '../assets/StudyMate.mp4';
 import smartHRImage from '../assets/SmartHR.png';
 import smartHRVideo from '../assets/SmartHR.mp4';
-import athleticsClubImage from '../assets/Athletics Club.png'; // Assuming you have an image for Athletics Club
+import athleticsClubImage from '../assets/Athletics Club.png';
+import owl from '../assets/owl.png';
+import OWL from '../assets/owl.mp4';
 const ProjectsComponent = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -49,10 +52,20 @@ const ProjectsComponent = () => {
       title: "Athletics Club",
       description: "Modern, responsive, and engaging website design focused on: Showcasing club achievements & values Promoting different athletic disciplines (sprints, jumps, endurance...)Highlighting upcoming events and competition schedules Presenting athlete testimonials and coaching staff",
       image: athleticsClubImage,
-      videoUrl: "https://www.youtube.com/watch?v=example", // Replace with actual video URL
+      videoUrl: "https://www.youtube.com/watch?v=example", 
       githubUrl: "https://www.figma.com/design/twadFdJLfqLfULhi869DyG/ACAkbou?node-id=0-1&t=8uYxswvnY4yCtRoP-1",
       techStack: ["Figma"],
       category: "UI UX Design"
+    },
+    {
+      id: 3,
+      title: "OWL AI",
+      description: "Owl AI is an innovative EdTech platform that redefines how students, learners, and freshers gain real-world experience in technology. We bridge the gap between academic learning and industry requirements by offering comprehensive virtual internships combined with curated learning content, expert mentorship, and industry-recognized certifications.",
+      image: owl,
+      videoUrl: OWL, 
+      githubUrl: "https://github.com/chaima-99/Internship_Platform",
+      techStack: ["React",  "emailjs", "tailwidcss"],
+      category: "Web App"
     }
   ];
 
