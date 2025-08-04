@@ -54,8 +54,8 @@ const ProjectsComponent = () => {
       image: athleticsClubImage,
       videoUrl: "https://www.youtube.com/watch?v=example", 
       githubUrl: "https://www.figma.com/design/twadFdJLfqLfULhi869DyG/ACAkbou?node-id=0-1&t=8uYxswvnY4yCtRoP-1",
-      techStack: ["Figma"],
-      category: "UI UX Design"
+      techStack: ["React",  "emailjs", "tailwidcss"],
+      category: "Web App"
     },
     {
       id: 3,
